@@ -6,7 +6,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --configuration production --base-href ./ && copy _redirects dist/pokemon-app-angular/_redirects",
+    "build": "ng build --configuration production --base-href ./ && cp _redirects dist/pokemon-app-angular/_redirects",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "lint": "ng lint"
