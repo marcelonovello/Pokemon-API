@@ -37,18 +37,19 @@ import { PokemonDetails } from '../models/pokemon.model';
 
 @Component({
   selector: 'app-tab1',
+  standalone: true,  // precisa estar aqui
   templateUrl: 'tab1.page.html',
   styleUrls: ['tab1.page.scss'],
   imports: [
     CommonModule,
-    IonHeader, 
-    IonToolbar, 
-    IonTitle, 
-    IonContent, 
-    IonList, 
-    IonItem, 
-    IonLabel, 
-    IonAvatar, 
+    IonHeader,
+    IonToolbar,
+    IonTitle,
+    IonContent,
+    IonList,
+    IonItem,
+    IonLabel,
+    IonAvatar,
     IonImg,
     IonButton,
     IonIcon,

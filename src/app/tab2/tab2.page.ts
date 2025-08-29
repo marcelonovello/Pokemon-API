@@ -38,6 +38,7 @@ import { PokemonDetails, PokemonSpecies } from '../models/pokemon.model';
 
 @Component({
   selector: 'app-tab2',
+  standalone: true,
   templateUrl: 'tab2.page.html',
   styleUrls: ['tab2.page.scss'],
   imports: [

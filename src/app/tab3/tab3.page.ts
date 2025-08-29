@@ -36,6 +36,7 @@ import { PokemonDetails } from '../models/pokemon.model';
 
 @Component({
   selector: 'app-tab3',
+  standalone: true,
   templateUrl: 'tab3.page.html',
   styleUrls: ['tab3.page.scss'],
   imports: [
