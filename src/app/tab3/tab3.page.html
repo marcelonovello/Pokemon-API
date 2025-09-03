@@ -20,35 +20,41 @@
   <!-- Estatísticas dos favoritos -->
   <ion-card *ngIf="favorites.length > 0" class="stats-card">
     <ion-card-header>
-      <ion-card-title>Estatísticas dos Favoritos</ion-card-title>
+      <ion-card-title>
+        <ion-icon name="analytics-outline" style="margin-right: 8px;"></ion-icon>
+        Estatísticas dos Favoritos
+      </ion-card-title>
     </ion-card-header>
     <ion-card-content>
       <ion-grid>
         <ion-row>
           <ion-col size="6" size-md="3">
-            <div class="stat-item">
+            <div class="stat-item total-stat">
+              <ion-icon name="heart" color="light" size="large"></ion-icon>
               <div class="stat-number">{{ getFavoritesStats()?.total }}</div>
               <div class="stat-label">Total</div>
             </div>
           </ion-col>
           <ion-col size="6" size-md="3" *ngIf="getFavoritesStats()?.mostCommonType">
-            <div class="stat-item">
+            <div class="stat-item type-stat">
               <ion-badge 
                 [style.background-color]="getTypeColor(getFavoritesStats()?.mostCommonType?.name || '')"
-                class="type-badge">
+                class="type-badge-large">
                 {{ capitalize(getFavoritesStats()?.mostCommonType?.name || '') }}
               </ion-badge>
               <div class="stat-label">Tipo Favorito</div>
             </div>
           </ion-col>
           <ion-col size="6" size-md="3">
-            <div class="stat-item">
+            <div class="stat-item height-stat">
+              <ion-icon name="trending-up-outline" color="light" size="large"></ion-icon>
               <div class="stat-number">{{ getFavoritesStats()?.averageHeight }}m</div>
               <div class="stat-label">Altura Média</div>
             </div>
           </ion-col>
           <ion-col size="6" size-md="3">
-            <div class="stat-item">
+            <div class="stat-item weight-stat">
+              <ion-icon name="barbell-outline" color="light" size="large"></ion-icon>
               <div class="stat-number">{{ getFavoritesStats()?.averageWeight }}kg</div>
               <div class="stat-label">Peso Médio</div>
             </div>

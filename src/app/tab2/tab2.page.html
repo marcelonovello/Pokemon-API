@@ -121,13 +121,13 @@
             <ion-col size="6">
               <div class="info-item">
                 <span class="info-label">Habitat</span>
-                <span class="info-value">{{ pokemonSpecies.habitat ? capitalize(pokemonSpecies.habitat.name) : 'Desconhecido' }}</span>
+                <span class="info-value">{{ pokemonSpecies.habitat ? translateHabitat(pokemonSpecies.habitat.name) : 'Desconhecido' }}</span>
               </div>
             </ion-col>
             <ion-col size="6">
               <div class="info-item">
                 <span class="info-label">Cor</span>
-                <span class="info-value">{{ pokemonSpecies.color ? capitalize(pokemonSpecies.color.name) : 'Desconhecido' }}</span>
+                <span class="info-value">{{ pokemonSpecies.color ? translateColor(pokemonSpecies.color.name) : 'Desconhecido' }}</span>
               </div>
             </ion-col>
           </ion-row>
@@ -147,7 +147,7 @@
         <div class="stats-container">
           <div *ngFor="let stat of pokemon.stats" class="stat-item">
             <div class="stat-header">
-              <span class="stat-name">{{ capitalize(stat.stat.name.replace('-', ' ')) }}</span>
+              <span class="stat-name">{{ translateStatName(stat.stat.name) }}</span>
               <span class="stat-value">{{ stat.base_stat }}</span>
             </div>
             <ion-progress-bar 
@@ -171,7 +171,7 @@
             [color]="ability.is_hidden ? 'warning' : 'primary'"
             class="ability-chip">
             <ion-label>
-              {{ capitalize(ability.ability.name.replace('-', ' ')) }}
+              {{ translateAbilityName(ability.ability.name) }}
               <span *ngIf="ability.is_hidden" class="hidden-label">(Oculta)</span>
             </ion-label>
           </ion-chip>
