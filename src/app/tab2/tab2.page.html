@@ -4,7 +4,7 @@
       <ion-back-button (click)="goBack()" defaultHref="/tabs/tab1"></ion-back-button>
     </ion-buttons>
     <ion-title>
-      {{ pokemon ? capitalize(pokemon.name) : 'Detalhes' }}
+      {{ pokemon ? translatePokemonName(pokemon.name) : 'Detalhes' }}
     </ion-title>
     <ion-buttons slot="end">
       <ion-button fill="clear" (click)="toggleFavorite()" *ngIf="pokemon">
@@ -18,7 +18,7 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <!-- Loading -->
+  <!-- Carregando -->
   <div *ngIf="isLoading" class="loading-container">
     <ion-spinner name="crescent"></ion-spinner>
     <p>Carregando detalhes...</p>
@@ -26,7 +26,7 @@
 
   <!-- Conteúdo principal -->
   <div *ngIf="!isLoading && pokemon">
-    <!-- Header com imagem principal -->
+    <!-- Cabeçalho com imagem principal -->
     <div class="pokemon-header" [style.background]="'linear-gradient(135deg, ' + getTypeColor(pokemon.types[0].type.name) + '40, ' + getTypeColor(pokemon.types[0].type.name) + '80)'">
       <div class="pokemon-id">#{{ pokemon.id.toString().padStart(3, '0') }}</div>
       <div class="pokemon-main-image">
@@ -45,7 +45,7 @@
           </ion-button>
         </div>
       </div>
-      <h1 class="pokemon-name">{{ capitalize(pokemon.name) }}</h1>
+      <h1 class="pokemon-name">{{ translatePokemonName(pokemon.name) }}</h1>
       <p class="pokemon-genus" *ngIf="pokemonSpecies">{{ getPortugueseGenus() }}</p>
     </div>
 
@@ -60,11 +60,11 @@
       <ion-card-content>
         <div class="types-container">
           <ion-badge 
-            *ngFor="let type of pokemon.types" 
-            [style.background-color]="getTypeColor(type.type.name)"
-            class="type-badge-large">
-            {{ capitalize(type.type.name) }}
-          </ion-badge>
+  *ngFor="let type of pokemon.types" 
+  [style.background-color]="getTypeColor(type.type.name)"
+  class="type-badge-large">
+  {{ translateTypeName(type.type.name) }}
+</ion-badge>
         </div>
       </ion-card-content>
     </ion-card>

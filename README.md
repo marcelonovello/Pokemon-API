@@ -4,7 +4,7 @@
 <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png" align="right" width="30%" style="margin: -20px 0 0 20px;">
 <div align="center">
 
-<h1 align="center">📊 POKEMON-APP-ANGULAR</h1>
+<h1 align="center">📊 POKEMON APP </h1>
 
 <p align="center">
 Interactive app for browsing Pokemon data, developed with Angular and Ionic, integrating the PokeAPI.

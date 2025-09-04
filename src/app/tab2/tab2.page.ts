@@ -523,23 +523,23 @@ export class Tab2Page implements OnInit {
      * Obtém a descrição em português
      */
     getPortugueseDescription(): string {
-        if (!this.pokemonSpecies) return '';
+    if (!this.pokemonSpecies) return '';
 
-        const ptEntry = this.pokemonSpecies.flavor_text_entries.find(
-            entry => entry.language.name === 'pt' || entry.language.name === 'pt-BR'
-        );
+    const ptEntry = this.pokemonSpecies.flavor_text_entries.find(
+        entry => entry.language.name === 'pt' || entry.language.name === 'pt-BR'
+    );
 
-        if (ptEntry) {
-            return ptEntry.flavor_text.replace(/\f/g, ' ').replace(/\n/g, ' ');
-        }
-
-        // Fallback para inglês
-        const enEntry = this.pokemonSpecies.flavor_text_entries.find(
-            entry => entry.language.name === 'en'
-        );
-
-        return enEntry ? enEntry.flavor_text.replace(/\f/g, ' ').replace(/\n/g, ' ') : '';
+    if (ptEntry) {
+        return ptEntry.flavor_text.replace(/\f/g, ' ').replace(/\n/g, ' ');
     }
+
+    // Fallback para inglês
+    const enEntry = this.pokemonSpecies.flavor_text_entries.find(
+        entry => entry.language.name === 'en'
+    );
+
+    return enEntry ? enEntry.flavor_text.replace(/\f/g, ' ').replace(/\n/g, ' ') : '';
+}
 
     /**
      * Obtém o gênero em português

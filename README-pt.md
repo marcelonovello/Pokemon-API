@@ -1,80 +1,116 @@
 [🇺🇸 English](./README.md)   |   [🇧🇷 Português](./README-pt.md)
 
-<br clear="right">
 <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png" align="right" width="30%" style="margin: -20px 0 0 20px;">
 <div align="center">
 
-<h1 align="center">📊 POKEMON-APP-ANGULAR</h1>
+<h1 align="center">📊 POKEMON APP</h1>
+
+
+Pokedex interativa desenvolvida com **Ionic 8** e **Angular 18**, consumindo a **PokeAPI** para exibir informacoes detalhadas sobre Pokemon. Aplicativo modular, escalavel e facil de manter.
+
 
 <p align="center">
-Aplicativo interativo para consultar dados de , desenvolvido com Angular, Ionic e integrando a PokeAPI
-</p>
-
-<p align="center">
-  <!-- License -->
+  <a href="https://ionicframework.com/">
+    <img src="https://img.shields.io/badge/Ionic-3880FF?style=flat&logo=ionic&logoColor=white" />
+  </a>
+  <a href="https://angular.io/">
+    <img src="https://img.shields.io/badge/Angular-DD0031?style=flat&logo=angular&logoColor=white" />
+  </a>
+  <a href="https://www.npmjs.com/">
+    <img src="https://img.shields.io/badge/npm-CB3837?style=flat&logo=npm&logoColor=white" />
+  </a>
   <a href="./LICENSE">
     <img src="https://img.shields.io/badge/license-MIT-yellow?style=flat" />
   </a>
-
-  <!-- Último commit -->
-  <a href="https://github.com/marcelonovello/pokemon-app-angular/commits/main">
-    <img src="https://img.shields.io/github/last-commit/marcelonovello/pokemon-app-angular?style=flat" />
-  </a>
-
-  <!-- TypeScript -->
-  <a href="https://www.typescriptlang.org/">
-    <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white" />
-  </a>
-
+  <img src="https://img.shields.io/github/stars/marcelonovello/Pokemon-App?style=flat&logo=github" />
+  <img src="https://img.shields.io/github/forks/marcelonovello/Pokemon-App?style=flat&logo=github" />
 </p>
 </div>
 
 <a id="visao-geral"></a>
 ## 🔎 Visão Geral
 
-Este projeto implementa uma Pokédex digital completa usando Ionic 8 e Angular 18.
-Permite que os usuários:
+O **Pokemon App** é uma aplicação modular que permite explorar dados detalhados sobre Pokémon, incluindo habilidades, tipos e estatísticas, de forma interativa e responsiva.  
 
-- 🔍 Pesquisar  via PokeAPI.
-- 📋 Listar e explorar detalhes de cada , incluindo estatísticas, tipos e habilidades.
-- ⭐ Favoritar  para acesso rápido.
-- 🧩 Interface modular e escalável, seguindo boas práticas de desenvolvimento front-end.
-- 📱 Design responsivo, totalmente otimizado para dispositivos móveis.  
+> 💡 **Por que este projeto é relevante?**  
+> Permite estudo prático de **Ionic**, **Angular** e consumo de **APIs externas**, além de demonstrar boas práticas de modularização e UI/UX.
 
-<a id="tecnologias"></a>
-## 💻 Tecnologias
-<p>
-  <img src="https://skillicons.dev/icons?i=angular,html,css,js,nodejs,ionic,capacitor" />
-</p>
-</div>
-
-## 📑 Sumário
-
-- 🔎 [Visão Geral](#visao-geral)
-- 💻 [Tecnologias](#tecnologias)
-- ✨ [Funcionalidades](#funcionalidades)
-- 🏗 [Estrutura do Projeto](#estrutura-do-projeto)
-- 🚀 [Começando](#comecando)
-  - ⚙️ [Pré-requisitos](#pre-requisitos)
-  - ⬇️ [Instalação](#instalacao)
-  - 🛠️ [Uso](#uso)
-  - 🧪 [Testes](#testes)
-    - 🔧 [Resolução de Problemas](#resolucao-de-problemas)
-- 🗺 [Roteiro do Projeto](#roteiro-do-projeto)
-- 👥 [Contribuindo](#contribuindo)
-- 📄 [Licença](#licenca)
-- 📚 [Agradecimentos](#agradecimentos)
+### ✨ Funcionalidades Principais
+- 🔍 Buscar Pokémon pelo nome ou ID
+- 📊 Visualizar estatísticas detalhadas
+- 🧬 Consultar tipos e habilidades
+- 🌐 Navegação fluida entre diferentes gerações de Pokémon
+- 📱 Interface responsiva para dispositivos móveis e desktop
 
 ---
-<a id="funcionalidades"></a>
-<a id="funcionalidades"></a>
-## ✨ Funcionalidades
 
--🔍 Pesquisar  por nome ou ID
-- 📊 Visualizar estatísticas, tipos e habilidades detalhadas
-- 📱 Design totalmente responsivo para dispositivos móveis e desktop
-- ⚡ Suporte offline com service workers
-- 🌐 Alimentado pela [PokeAPI](https://pokeapi.co/) oficial
+## 📑 Sumário
+- [Visão Geral](#visao-geral)
+- [Demonstração](#demonstracao)
+- [Tecnologias](#tecnologias-utilizadas)
+- [Execução Local](#execucao-local)
+- [Estrutura do Projeto](#estrutura-do-projeto)
+- [Resolução de Problemas](#resolucao-de-problemas)
+- [Testes](#testes)
+- [Segurança](#seguranca)
+- [Licença](#licenca)
+- [Aprendizados](#aprendizados)
+- [Como Contribuir](#como-contribuir)
+- [Contato](#contato)
+
+---
+
+<a id="demonstracao"></a>
+## 🎬 Demonstração
+
+<p align="center">
+  <img src="./assets/demo-full.gif" alt="Demonstração do Pokemon App mostrando busca e detalhes dos Pokémon" width="80%" />
+</p>
+
+💻 **Deploy ativo:**  
+- App web: *(Adicionar link caso exista)*
+
+---
+
+<a id="tecnologias-utilizadas"></a>
+## 🛠️ Tecnologias Utilizadas
+
+| Camada       | Tecnologias / Ferramentas                                      |
+|--------------|---------------------------------------------------------------|
+| Frontend     | [Ionic](https://ionicframework.com/), [Angular](https://angular.io/) |
+| Backend/API  | [PokeAPI](https://pokeapi.co/)                                 |
+| Ferramentas  | [npm](https://www.npmjs.com/), [Node.js](https://nodejs.org/) |
+
+---
+
+<a id="execucao-local"></a>
+## 🚀 Execução Local
+
+### ⚙️ Pré-requisitos
+- ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat&logo=node.js&logoColor=white)
+- ![npm](https://img.shields.io/badge/npm-CB3837?style=flat&logo=npm&logoColor=white)
+- ![Ionic](https://img.shields.io/badge/Ionic-3880FF?style=flat&logo=ionic&logoColor=white)
+
+### ⬇️ Instalação Rápida
+1️⃣ Clone o repositório:
+```bash
+git clone https://github.com/marcelonovello/Pokemon-App.git
+cd Pokemon-App
+```
+2️⃣ Instale as dependências:
+```bash
+npm install
+```
+3️⃣ Execute o aplicativo:
+```bash
+ionic serve
+```
+4️⃣ Acesse no navegador:
+```bash
+http://localhost:8100
+```
+
+---
 
 <a id="estrutura-do-projeto"></a>
 ## 🏗 Estrutura do Projeto
@@ -111,61 +147,20 @@ Permite que os usuários:
 
 ---
 
-<a id="comecando"></a>
-## 🚀 Começando
-
-<a id="pre-requisitos"></a>
-### ⚙️ Pré-requisitos
-
-Antes de começar com o Pokémon app, verifique se o seu ambiente atende aos seguintes requisitos:
-
-- [<img align="center" src="https://img.shields.io/badge/Node.js-339933?style=flat&logo=node.js&logoColor=white" />](https://nodejs.org/)
-- [<img align="center" src="https://img.shields.io/badge/npm-CB3837?style=flat&logo=npm&logoColor=white" />](https://www.npmjs.com/) or [<img align="center" src="https://img.shields.io/badge/Yarn-2C8EBB?style=flat&logo=yarn&logoColor=white" />](https://yarnpkg.com/)
-- [<img align="center" src="https://img.shields.io/badge/Angular-DD0031?style=flat&logo=angular&logoColor=white" />](https://angular.io/cli)
-- [<img align="center" src="https://img.shields.io/badge/Ionic-3880FF?style=flat&logo=ionic&logoColor=white" />](https://ionicframework.com/docs/cli)
-
-<a id="instalacao"></a>
-## ⬇️ Instalação
-
-Instale o Pokémon app usando um dos métodos:
-
-**Build a partir do código-fonte:**
-
-1. Clone o repositório:
-```sh
-git clone https://github.com/marcelonovello/pokemon-app-angular.git
-```
-
-2. Navegue até o diretório do projeto:
-```sh
-cd pokemon-app-angular
-```
-
-3. Instale as dependências:
-```sh
-npm install
-```
-
-<a id="uso"></a>
-## 🛠️ Uso
-Execute o Micro-Frontends-Application usando o seguinte comando:<br>
-```sh
-ionic serve
-```
-
-<a id="testes"></a>
-## 🧪 Testes
-Execute os testes usando o seguinte comando:<br>
-```sh
-npm run test
-```
-
 <a id="resolucao-de-problemas"></a>
-## 🔧 Resolução de Problemas
 
-- ⚠️ **Se as portas já estiverem em uso** → Altere a porta em `.env` ou `docker-compose.yml`.  
-- 🐛 **Se a PokeAPI falhar** → Verifique a URL da API ou se o serviço da API está online.  
-  
+## 🔧 Resolução de Problemas
+- ⚠️ **Porta já em uso**: Altere a porta padrão no ``ionic.config.json``.
+- 🐛 **Erro na API**: Verifique a conectividade com a [PokeAPI](PokeAPI) e atualize URLs se necessário.
+
+---
+
+<a id="seguranca"></a>
+
+## 🔒 Segurança
+- 🔐 Mantenha dependências atualizadas com ``npm audit``.
+- ❌ Não exponha chaves ou dados sensíveis no repositório.
+
 ---
 
 <a id="roteiro-do-projeto"></a>
@@ -188,62 +183,54 @@ npm run test
 
 ---
 
-<a id="contribuindo"></a>
-## 👥 Contribuindo
-
-- **💬 [Participe das Discussões](https://github.com/marcelonovello/pokemon-app-angular/discussions)**: Compartilhe suas ideias, forneça feedback ou faça perguntas.
-- **🐛 [Reportar Problemas](https://github.com/marcelonovello/pokemon-app-angular/issues)**: Envie bugs encontrados ou registre solicitações de novas funcionalidades para o projeto `pokemon-app-angular`.
-- **💡 [Submeta Pull Requests](https://github.com/marcelonovello/pokemon-app-angular/blob/main/CONTRIBUTING.md)**: Analise PRs abertos e envie seus próprios PRs.
-
-<details closed>
-<summary>Diretrizes para Contribuição</summary>
-
-1. **Fork do Repositório**: Comece fazendo um fork do repositório para sua conta no GitHub.
-2. **Clone Localmente**: Clone o repositório forked para sua máquina usando um cliente git.
-   ```sh
-   git clone https://github.com/marcelonovello/pokemon-app-angular
-   ```
-3. **Crie uma Nova Branch**: Sempre trabalhe em uma nova branch, dando um nome descritivo.
-   ```sh
-   git checkout -b new-feature-x
-   ```
-4. **Faça Suas Alterações**: Desenvolva e teste suas alterações localmente.
-5. **Commit das Alterações**: Faça commit com uma mensagem clara descrevendo suas atualizações.
-   ```sh
-   git commit -m \'Implemented new feature x.\'
-   ```
-6. **Push para o github**: Envie as alterações para seu repositório forked.
-   ```sh
-   git push origin new-feature-x
-   ```
-7. **Submeta um Pull Request**: Crie um PR contra o repositório original. Descreva claramente as mudanças e suas motivações.
-8. **Revisão**: Uma vez que o PR seja revisado e aprovado, ele será mergeado na branch principal. Parabéns pela contribuição!
-</details>
-
-<details closed>
-<summary>Gráfico de Contribuidores</summary>
-<br>
-<p align="left">
-   <a href="https://github.com{/marcelonovello/pokemon-app-angular/}graphs/contributors">
-      <img src="https://contrib.rocks/image?repo=marcelonovello/pokemon-app-angular">
-   </a>
-</p>
-</details>
-
----
-
 <a id="licenca"></a>
 ## 📄 Licença
 
-Este projeto está licenciado sob a Licença MIT. Consulte o arquivo [LICENSE](LICENSE) para mais detalhes.
+Licença MIT. Consulte o arquivo [LICENSE](LICENSE).
 
 ---
 
-<a id="agradecimentos"></a>
-## 📚 Acknowledgments
+<a id="aprendizados"></a>
+## 📚 Aprendizados
+- ⚡ Integração com APIs externas (PokeAPI)
+- 📱 Desenvolvimento mobile com Ionic
+- 🛠️ Boas práticas de Angular e modularização
+- 🌐 UI/UX responsiva
+- 💻 Git e GitHub: commits, branches e versionamento
 
-- 🎮 [PokeAPI](https://pokeapi.co/) — por fornecer **dados sobre Pokémon**
-- 📱 [Ionic Framework](https://ionicframework.com/) — pelos **componentes de interface**  
-- 🅰️ [Angular](https://angular.io/) — pelo **framework de aplicação** 
+---
+
+<a id="como-contribuir"></a>
+## 🤝 Como Contribuir
+
+Contribuições são bem-vindas! Siga os passos abaixo para colaborar com este projeto:
+
+1. **Faça um Fork** do repositório.  
+2. **Crie uma Branch** para sua feature ou correção:  
+  ```bash
+   git checkout -b minha-feature
+  ```
+3. Faça as alterações necessárias no código ou na documentação.
+4. Confirme as mudanças (commits) com mensagens claras:
+  ```bash
+  git commit -m "Adiciona nova funcionalidade X"
+  ```
+5. Envie para seu Fork:
+  ```bash
+  git push origin minha-feature
+  ```
+6. Abra um Pull Request (PR) para a branch main deste repositório.
+ ```bash
+ 💡 Dica: Antes de enviar o PR, verifique se o código segue os padrões definidos e se todos os testes passam.
+ ```
+
+---
+
+<a id="contato"></a>
+## 📬 Contato
+
+- **Autor:** Marcelo Novello  
+- **GitHub:** [marcelonovello](https://github.com/marcelonovello)  
+- **LinkedIn:** [Marcelo Novello](https://www.linkedin.com/in/marcelo-novello/)
 
 ---
