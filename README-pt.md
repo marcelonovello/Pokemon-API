@@ -19,8 +19,8 @@ Pokedex interativa desenvolvida com **Ionic 8** e **Angular 18**, consumindo a *
   <a href="./LICENSE">
     <img src="https://img.shields.io/badge/license-MIT-yellow?style=flat" />
   </a>
-  <img src="https://img.shields.io/github/stars/marcelonovello/YouTube-Data-Connector?style=flat&logo=github" />
-  <img src="https://img.shields.io/github/forks/marcelonovello/YouTube-Data-Connector?style=flat&logo=github" />
+  <img src="https://img.shields.io/github/stars/marcelonovello/Pokemon-API?style=flat&logo=github" />
+  <img src="https://img.shields.io/github/forks/marcelonovello/Pokemon-API?style=flat&logo=github" />
 </p>
 </div>
 
@@ -69,7 +69,7 @@ O **Pokemon App** é uma aplicação modular que permite explorar dados detalhad
 </p>
 
 💻 **Deploy ativo:**  
-- App web: [https://pokemon-api-irfm.onrender.com/](https://pokemon-api-irfm.onrender.com/)
+- Frontend: [https://pokemon-api-irfm.onrender.com/](https://pokemon-api-irfm.onrender.com/)
 
 ---
 
@@ -210,17 +210,17 @@ Contribuições são bem-vindas! Siga os passos abaixo para colaborar com este p
 
 1. **Faça um Fork** do repositório.  
 2. **Crie uma Branch** para sua feature ou correção:  
-  ```bash
-   git checkout -b minha-feature
-  ```
+```bash
+   git checkout -b my-feature
+```
 3. Faça as alterações necessárias no código ou na documentação.
 4. Confirme as mudanças (commits) com mensagens claras:
-  ```bash
+```bash
   git commit -m "Adiciona nova funcionalidade X"
-  ```
+```
 5. Envie para seu Fork:
   ```bash
-  git push origin minha-feature
+  git commit -m "Add feature X"
   ```
 6. Abra um Pull Request (PR) para a branch main deste repositório.
  ```bash

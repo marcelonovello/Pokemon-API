@@ -17,8 +17,8 @@ Interactive Pokedex developed with **Ionic 8** and **Angular 18**, consuming the
   <a href="./LICENSE">
     <img src="https://img.shields.io/badge/license-MIT-yellow?style=flat" />
   </a>
-  <img src="https://img.shields.io/github/stars/marcelonovello/YouTube-Data-Connector?style=flat&logo=github" />
-  <img src="https://img.shields.io/github/forks/marcelonovello/YouTube-Data-Connector?style=flat&logo=github" />
+  <img src="https://img.shields.io/github/stars/marcelonovello/Pokemon-API?style=flat&logo=github" />
+  <img src="https://img.shields.io/github/forks/marcelonovello/Pokemon-API?style=flat&logo=github" />
 </p>
 </div>
 
