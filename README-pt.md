@@ -24,6 +24,8 @@ Pokedex interativa desenvolvida com **Ionic 8** e **Angular 18**, consumindo a *
 </p>
 </div>
 
+---
+
 <a id="visao-geral"></a>
 ## 🔎 Visão Geral
 
@@ -61,8 +63,9 @@ O **Pokemon App** é uma aplicação modular que permite explorar dados detalhad
 ## 🎬 Demonstração
 
 <p align="center">
-  <img src="./assets/demo.gif" 
-    alt="Demonstração do Pokemon App mostrando busca e detalhes dos Pokémon"  width="80%" />
+  <img src="./src/assets/demo.gif" 
+       alt="Demonstração do Pokemon App mostrando busca e detalhes dos Pokémon" 
+       width="80%" />
 </p>
 
 💻 **Deploy ativo:**  
@@ -148,8 +151,8 @@ http://localhost:8100
 <a id="resolucao-de-problemas"></a>
 
 ## 🔧 Resolução de Problemas
-- ⚠️ **Porta já em uso**: Altere a porta padrão no ``ionic.config.json``.
-- 🐛 **Erro na API**: Verifique a conectividade com a [PokeAPI](PokeAPI) e atualize URLs se necessário.
+- ⚠️ **Porta já em uso** → Altere a porta padrão no ``ionic.config.json``.
+- 🐛 **Erro na API** → Verifique a conectividade com a [PokeAPI](https://pokeapi.co/) e atualize URLs se necessário.
 
 ---
 
@@ -178,6 +181,8 @@ http://localhost:8100
 - [ ] **`Testing`**: Escrever testes unitários e de integração para componentes e serviços.
 - [ ] **`Deploy`**: Preparar build para produção e publicar como PWA (Progressive Web App).
 - [ ] **`Enhance`**: Melhorar UI/UX, documentação e experiência do desenvolvedor.
+
+![Progresso](https://img.shields.io/badge/Progress-27%25-brightgreen)
 
 ---
 
