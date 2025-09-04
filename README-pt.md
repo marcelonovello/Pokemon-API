@@ -64,11 +64,12 @@ O **Pokemon App** é uma aplicação modular que permite explorar dados detalhad
 ## 🎬 Demonstração
 
 <p align="center">
-  <img src="./assets/demo-full.gif" alt="Demonstração do Pokemon App mostrando busca e detalhes dos Pokémon" width="80%" />
+  <img src="./assets/demo.gif" 
+    alt="Demonstração do Pokemon App mostrando busca e detalhes dos Pokémon"  width="80%" />
 </p>
 
 💻 **Deploy ativo:**  
-- App web: *(Adicionar link caso exista)*
+- App web: [https://pokemon-api-irfm.onrender.com/](https://pokemon-api-irfm.onrender.com/)
 
 ---
 
