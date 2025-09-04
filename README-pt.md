@@ -16,14 +16,11 @@ Pokedex interativa desenvolvida com **Ionic 8** e **Angular 18**, consumindo a *
   <a href="https://angular.io/">
     <img src="https://img.shields.io/badge/Angular-DD0031?style=flat&logo=angular&logoColor=white" />
   </a>
-  <a href="https://www.npmjs.com/">
-    <img src="https://img.shields.io/badge/npm-CB3837?style=flat&logo=npm&logoColor=white" />
-  </a>
   <a href="./LICENSE">
     <img src="https://img.shields.io/badge/license-MIT-yellow?style=flat" />
   </a>
-  <img src="https://img.shields.io/github/stars/marcelonovello/Pokemon-App?style=flat&logo=github" />
-  <img src="https://img.shields.io/github/forks/marcelonovello/Pokemon-App?style=flat&logo=github" />
+  <img src="https://img.shields.io/github/stars/marcelonovello/YouTube-Data-Connector?style=flat&logo=github" />
+  <img src="https://img.shields.io/github/forks/marcelonovello/YouTube-Data-Connector?style=flat&logo=github" />
 </p>
 </div>
 
