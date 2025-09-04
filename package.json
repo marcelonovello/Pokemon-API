@@ -4,12 +4,12 @@
   "author": "Ionic Framework",
   "homepage": "https://ionicframework.com/",
   "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build --configuration production --base-href ./ && cp _redirects dist/pokemon-app-angular/_redirects",
-    "watch": "ng build --watch --configuration development",
-    "test": "ng test",
-    "lint": "ng lint"
+  "ng": "ng",
+  "start": "serve -s dist/pokemon-app-angular/browser",
+  "build": "ionic build --prod",
+  "watch": "ng build --watch --configuration development",
+  "test": "ng test",
+  "lint": "ng lint"
   },
   "private": true,
   "dependencies": {
